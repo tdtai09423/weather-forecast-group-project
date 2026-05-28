@@ -38,6 +38,8 @@ __pycache__/
 venv/
 env/
 ENV/
+# Named venvs (bất kỳ tên nào đặt cho venv)
+weather-forecast/
 pip-log.txt
 pip-delete-this-directory.txt
 *.egg-info/
