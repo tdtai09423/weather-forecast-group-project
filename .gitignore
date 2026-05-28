@@ -87,5 +87,6 @@ Thumbs.db
 .idea/
 .vscode/settings.json
 .vscode/*.code-workspace
+.vscode/launch.json
 *.swp
 *~
