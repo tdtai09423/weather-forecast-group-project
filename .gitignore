@@ -1,0 +1,89 @@
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Frontend (Node / React)
+node_modules/
+dist/
+build/
+.next/
+.vite/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Backend (ASP.NET Core / .NET)
+backend/bin/
+backend/obj/
+backend/*.user
+backend/.vs/
+backend/**/*.user
+*.suo
+*.ncrunch*
+_ReSharper*/
+[Tt]humbs.db
+
+# Python (FastAPI, Jupyter, general)
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.Python
+.venv/
+venv/
+env/
+ENV/
+pip-log.txt
+pip-delete-this-directory.txt
+*.egg-info/
+dist/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Large Data Files (never commit raw data)
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.arrow
+data_workspace/data/raw/*
+data_workspace/data/processed/*
+# Allow .gitkeep placeholders inside data dirs
+!data_workspace/data/raw/.gitkeep
+!data_workspace/data/processed/.gitkeep
+
+# Model Artifacts (use DVC / cloud storage instead)
+*.pkl
+*.pickle
+*.joblib
+*.onnx
+*.pt
+*.pth
+*.bin
+data_workspace/models/*
+!data_workspace/models/.gitkeep
+
+# OS & Editor
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+.idea/
+.vscode/settings.json
+.vscode/*.code-workspace
+*.swp
+*~
